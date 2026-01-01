@@ -8,7 +8,7 @@ function onLoad() {
   displayBagIcon();
   loadBagItemObjects();
   displayBagItems();
-  displayBagSummary()
+  displayBagSummary();
 }
 
 function displayBagIcon() {
@@ -50,8 +50,8 @@ function displayBagSummary() {
     totalMRP += item.price.original_price
     totalDiscount += item.price.original_price - item.price.current_price
   })
-  const CONVENIENCE_FEE = 99;
-  let finalPayment = totalMRP - totalDiscount + CONVENIENCE_FEE;
+  const convenienceFee = bagItemObjects.length>0 ? 99 : 0;
+  let finalPayment = totalMRP - totalDiscount + convenienceFee;
   bagSummaryElement.innerHTML = `
     <div class="bag-details-container">
         <div class="price-header">PRICE DETAILS (${totalItem} Items) </div>
@@ -65,7 +65,7 @@ function displayBagSummary() {
         </div>
         <div class="price-item">
             <span class="price-item-tag">Convenience Fee</span>
-            <span class="price-item-value">₹99</span>
+            <span class="price-item-value">₹${convenienceFee}</span>
         </div>
         <hr>
         <div class="price-footer">
@@ -113,6 +113,6 @@ function generateItemHTML(item) {
   </div>`
 }
 
-function placeOrder(){
+function placeOrder() {
   alert('Feature Not Available Yet ☹️')
 }
