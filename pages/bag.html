@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra Clone</title>
-    <link rel="stylesheet" href="css/index.css"> <!-- External CSS -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- Google Icons -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/bag.css"> <!-- External CSS -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Google Icons -->
     <script src="https://kit.fontawesome.com/d7f0ad760c.js" crossorigin="anonymous"></script> <!-- FA Icons -->
-    <link rel="icon" href="/images/myntra-favicon.svg"> <!-- Favicon -->
+    <link rel="icon" href="images/myntra-favicon.svg" type="image/svg"> <!-- Favicon -->
 
 </head>
+
 <body>
     <header>
         <div class="logo_container">
@@ -40,17 +45,23 @@
                 <span class="material-symbols-outlined action_icon">favorite</span>
                 <span>Wishlist</span>
             </div>
-            <a class="action_container" href="/pages/bag.html">
+            <a class="action_container" href="bag.html">
                 <span class="material-symbols-outlined action_icon">shopping_bag</span>
                 <span>Bag</span>
                 <span class="bag-item-count">0</span>
             </a>
         </div>
-
     </header>
     <main>
-        <div class="items-container">
-            <!-- Item Here -->
+        <div class="bag-page">
+            <div class="bag-items-container">
+                <div class="bag-item-container">
+                    <!-- Items Here -->
+                </div>
+            </div>
+            <div class="bag-summary">
+                <!-- Summary Cart -->
+            </div>
         </div>
     </main>
     <footer>
@@ -83,8 +94,8 @@
             <div class="footer_column">
                 <h3 class="footer_head">EXPERIENCE MYNTRA APP ON MOBILE </h3>
                 <div id="app_links">
-                    <a href="#"><img src="images/google-play.png" alt="google-play"></a>
-                    <a href="#"><img src="images/app-store.png" alt="apple-store"></a>
+                    <a href="#"><img src="/images/google-play.png" alt="google-play"></a>
+                    <a href="#"><img src="/images/app-store.png" alt="apple-store"></a>
                 </div>
                 <h3 class="footer_head">KEEP IN TOUCH</h3>
                 <div id="social_links">
@@ -96,12 +107,12 @@
             </div>
             <div class="footer_column">
                 <div class="promises">
-                    <img src="images/original.png" alt="original">
+                    <img src="/images/original.png" alt="original">
                     <p><strong style="color: black;">100% ORIGINAL</strong> guarantee for all products at myntra.com</p>
                 </div>
                 <div class="promises">
-                    <img src="images/14d-return.png" alt="original">
-                    <p><strong style="color: black;">Return within 14days</strong>  of receiving your order</p>
+                    <img src="/images/14d-return.png" alt="original">
+                    <p><strong style="color: black;">Return within 14days</strong> of receiving your order</p>
                 </div>
             </div>
         </div>
@@ -109,6 +120,7 @@
         <div id="copyright">© 2025 www.myntra.com. All rights reserved.</div>
     </footer>
     <script src="/scripts/items.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script src="/scripts/bag.js"></script>
 </body>
+
 </html>
